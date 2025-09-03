@@ -1,0 +1,31 @@
+#database: "database.sqlite"
+database: "database.postgres"
+secret_key: "RANDOM-STRING"  # Random keys
+nobroadcast: False            # Safety mode
+
+mail_enabled: False
+mail_host: "SERVER:589"
+mail_user: "user"
+mail_pass: "password"
+mail_from: "noreply@agent.org"
+
+admins:
+ - adminA@example.com
+ - adminB@example.com
+
+minIPAge: 300  # How long in secs does an IP need to wait to register a new account?
+witness_url: "wss://wss.acloudbank.com"
+
+registrar: "localcoin-ico"
+default_referrer: "localcoin-ico"
+referrer_percent: 50  # in percent
+wif: "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3"
+
+balance_mailthreshold: 500  # if balances goes below this, you will be notified
+
+core_asset: "LLC"
+donation_amount: 100
+donation_asset: LLC
+prefix: "LLC"
+
+registrations_limit: 100000
