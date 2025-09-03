@@ -1,5 +1,5 @@
 -e git+https://github.com/technoshantoms/python-graphenelib#egg=graphenelib
--e git+https://github.com/graphene-blockchain/python-bitshares#egg=bitshares
+-e git+https://github.com/technoshantoms/python-bitshares#egg=bitshares
 pytest
 coverage
 tqdm
