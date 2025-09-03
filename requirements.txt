@@ -1,7 +1,6 @@
 appdirs==1.4.3
 autobahn==18.5.1
-#-e git://github.com/bitshares/python-bitshares#egg=bitshares
-blinker==1.4
+-e git+https://github.com/graphene-blockchain/python-bitshares#egg=bitshares
 certifi==2018.4.16
 chardet==3.0.4
 click==6.7
@@ -14,7 +13,7 @@ Flask-Mail==0.9.1
 Flask-Script==2.0.6
 Flask-Session==0.3.1
 Flask-SQLAlchemy==2.3.2
-#-e git://github.com/xeroc/python-graphenelib#egg=graphenelib
+-e git+https://github.com/technoshantoms/python-graphenelib#egg=graphenelib
 gunicorn==19.8.1
 idna==2.6
 itsdangerous==0.24
