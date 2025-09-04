@@ -1,25 +1,25 @@
 appdirs==1.4.3
 autobahn==18.5.1
 -e git+https://github.com/technoshantoms/python-bitshares#egg=bitshares
-blinker==1.4
+blinker>=1.9.0
 certifi==2018.4.16
 chardet==3.0.4
-click==6.7
+click>=8.1.3
 configparser==3.5.0
 ecdsa==0.13
 Events==0.3
-Flask==1.0.2
-Flask-Cors==3.0.4
-Flask-Mail==0.9.1
+Flask>=1.0.2
+Flask-Cors>=3.0.4
+Flask-Mail>=0.9.1
 Flask-Script==2.0.6
 Flask-Session==0.3.1
-Flask-SQLAlchemy==2.3.2
+Flask-SQLAlchemy==3.0.0
 -e git+https://github.com/technoshantoms/python-graphenelib#egg=graphenelib
 gunicorn==19.8.1
 idna==2.6
-itsdangerous==0.24
-Jinja2==2.10
-MarkupSafe==2.0.0
+itsdangerous>=2.2.0
+Jinja2>=3.1.2
+MarkupSafe>=2.1.1
 pycryptodome==3.6.1
 pycryptodomex==3.6.1
 pylibscrypt==1.7.1
@@ -27,9 +27,9 @@ PyYAML==4.2b2
 requests==2.18.4
 scrypt==0.8.6
 six==1.11.0
-SQLAlchemy==1.2.7
+SQLAlchemy==2.0.0
 txaio==2.10.0
 urllib3==1.22
 websocket-client==0.47.0
 websockets==4.0.1
-Werkzeug==2.0.0
+Werkzeug>=3.0.0
