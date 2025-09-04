@@ -4,7 +4,7 @@ import re
 from pprint import pprint
 import json
 import os
-from flask import render_template, request, session, jsonify, abort
+from flask import Flask render_template, request, session, jsonify, abort
 from . import app, models
 from datetime import datetime
 import traceback
@@ -19,7 +19,8 @@ def api_error(msg):
 
 @app.route('/')
 def index():
-    return request.args.get("ip")
+    #return request.args.get("ip") #dennis satia
+    return render_template('index.html')
 
 
 @app.route('/api/v1/accounts', methods=['POST'], defaults={'referrer': None})

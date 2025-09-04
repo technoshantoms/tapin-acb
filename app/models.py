@@ -11,7 +11,7 @@ class Accounts(db.Model):
 
     __tablename__ = "users"
 
-    id = db.Column(db.Integer, primary_key=True)
+    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
     account = db.Column(db.String(255), unique=True)
     ip = db.Column(db.String(100))
     created = db.Column(db.DateTime())
