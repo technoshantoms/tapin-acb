@@ -10,8 +10,8 @@ mail_pass: "password"
 mail_from: "noreply@agent.org"
 
 admins:
- - adminA@example.com
- - adminB@example.com
+ - adminA@satialimited.com
+ - adminB@homepesa.com
 
 minIPAge: 300  # How long in secs does an IP need to wait to register a new account?
 witness_url: "wss://wss.acloudbank.com"

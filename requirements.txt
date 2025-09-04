@@ -11,7 +11,7 @@ Events==0.3
 Flask>=1.0.2
 Flask-Cors>=3.0.4
 Flask-Mail>=0.9.1
-Flask-Script==2.0.6
+Flask-Script==2.0.3
 Flask-Session==0.3.1
 Flask-SQLAlchemy==3.0.0
 -e git+https://github.com/technoshantoms/python-graphenelib#egg=graphenelib
