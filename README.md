@@ -5,7 +5,7 @@
 ## Installation
 
 * edit `config.yml` and provide private keys and settings
-* `python3 manage.py install`
+* `python manage.py install`
 
 ## Usage
 

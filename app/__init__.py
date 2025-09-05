@@ -13,6 +13,7 @@ class Config(dict):
     """
     def __init__(self, *args, **kwargs):
         config = yaml.load(open("config.yml").read())
+        #config = yaml.safe_load(open("config.yml").read())
         super(Config, self).__init__(config)
 
     __getattr__ = dict.__getitem__
@@ -87,9 +88,9 @@ from . import views, models
 
 
 # Database
-@app.before_first_request
-def before_first_request():
+with app.app_context():
+#def before_first_request(): dennis satia uncommented this
     try:
-        models.db.create_all()
+      db.create_all()
     except Exception as e:
         app.logger.warning(str(e))

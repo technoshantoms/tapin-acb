@@ -2,17 +2,19 @@
 
 import sys
 from flask import Flask
-from flask_script import Manager, Command
+#from flask_script import Manager, Command
 from app import app, db
 from app import config
 import threading
 import os
 from os import path
 
-manager = Manager(app)
+manager = Flask(__name__)
+
+#manager = Manager(app)
 
 
-@manager.command
+@manager.cli.command
 def install():
     database_dir = path.dirname(config.database)
     if len(database_dir) > 0 and not path.exists(database_dir):
@@ -21,23 +23,23 @@ def install():
     db.create_all()
 
 
-@manager.command
+@manager.cli.command
 def run():
     app.run()
 
 
-@manager.command
+@manager.cli.command
 def start():
     app.run(debug=True)
 
 
-@manager.command
+@manager.cli.command
 def donations(start=None, end=None):
     import worker_donations
     worker_donations.run(start, end)
 
 
-@manager.command
+@manager.cli.command
 def testmail():
     from flask_mail import Message
     from app import mail
@@ -48,4 +50,5 @@ def testmail():
 
 
 if __name__ == '__main__':
-    manager.run()
+    #manager.run()
+     pass

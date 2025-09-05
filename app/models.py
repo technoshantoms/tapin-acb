@@ -10,8 +10,7 @@ from . import config
 class Accounts(db.Model):
 
     __tablename__ = "users"
-
-    id = db.Column(db.Integer, primary_key=True, autoincrement=True)
+    id = db.Column(db.Integer, primary_key=True)
     account = db.Column(db.String(255), unique=True)
     ip = db.Column(db.String(100))
     created = db.Column(db.DateTime())

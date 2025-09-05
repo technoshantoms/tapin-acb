@@ -19,8 +19,7 @@ def api_error(msg):
 
 @app.route('/')
 def index():
-    #return request.args.get("ip") #dennis satia
-    return render_template('index.html')
+    return request.args.get("ip")
 
 
 @app.route('/api/v1/accounts', methods=['POST'], defaults={'referrer': None})
